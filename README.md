@@ -57,7 +57,7 @@ Ditch stacks of paper business cards, separate hardware tag programmers, or stat
 ### 1. Creating a Link Card
 1. Open NearLink and tap **`+ Create New Link`** at the bottom of the screen.
 2. Enter a descriptive **Card Name** (e.g., *Personal Website*, *LinkedIn*, *GitHub*).
-3. Enter the target **URL** (e.g., `github.com/Drake2Dev`). *(If no scheme is provided, NearLink will automatically prepend `https://`)*.
+3. Enter the target **URL** (e.g., `github.com/Drake2Dev`). *(If no scheme is provided, NearLink will automatically pre-append `https://`)*.
 4. Tap **Save**.
 
 ### 2. Broadcasting via NFC
