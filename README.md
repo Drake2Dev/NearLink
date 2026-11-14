@@ -10,7 +10,7 @@ Turn your Android phone into an instant tap-to-share digital business card and l
 [![Privacy](https://img.shields.io/badge/Privacy-100%25_Local_%26_Offline-green)](#privacy--terms)
 [![Privacy Policy](https://img.shields.io/badge/Privacy%20Policy-View-blue)](PRIVACY.md)
 
-[**Download on Google Play**](https://play.google.com) *(Coming Soon)* • [**Privacy Policy**](PRIVACY.md) • [**Report Bug**](https://github.com/Drake2Dev/NearLink/issues)
+[**Download on Google Play**](https://play.google.com/store/apps/details?id=com.drake2dev.nearlink) *(Coming Soon)* • [**Privacy Policy**](PRIVACY.md) • [**Report Bug**](https://github.com/Drake2Dev/NearLink/issues)
 
 <br/>
 
