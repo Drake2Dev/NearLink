@@ -62,11 +62,12 @@ Ditch stacks of paper business cards, separate hardware tag programmers, or stat
 
 ### 2. Broadcasting via NFC
 1. Make sure **NFC** is turned **ON** in your Android device's system settings.
-2. In NearLink, **tap the card** you want to transmit.
-3. The card will turn green and display:  
+2. **Android 17+ phones:** turn **Tap to share** **OFF** (one-time setup). See [the fix below](#two-android-phones-swapped-contact-cards-instead-of-opening-my-link).
+3. In NearLink, **tap the card** you want to transmit.
+4. The card will turn green and display:  
    `● Broadcasting – hold your phone near a reader`
-4. Hold the back of your phone near the NFC sweet spot of the recipient's smartphone or NFC reader.
-5. Tap the card again at any time to **Stop Broadcasting**.
+5. Hold the back of your phone near the NFC sweet spot of the recipient's smartphone or NFC reader.
+6. Tap the card again at any time to **Stop Broadcasting**.
 
 <div align="center">
   <img src="screenshots/nfc_tap_demonstration.jpg" alt="Aligning phones for tap to share" width="70%" style="border-radius: 8px;" />
@@ -113,15 +114,29 @@ NearLink uses Android's Storage Access Framework (SAF) so you can back up and re
 > **Note on Receiving Devices:**  
 > - **iPhones:** iPhone XS and newer read background NDEF URLs automatically without requiring a dedicated reader app.  
 > - **Android:** Most modern Android devices read NDEF URLs automatically when unlocked.
+> - **Android to Android:** Newer Android phones (Pixel 6 and newer on Android 17+) have a **Tap to share** feature that swaps contact cards when two phones touch. Turn it off on the phone running NearLink, or the link may not be sent. [How to fix it](#two-android-phones-swapped-contact-cards-instead-of-opening-my-link).
 
 ---
 
 ## ❓ Troubleshooting & FAQ
 
+#### Two Android phones swapped contact cards instead of opening my link
+
+This is caused by Android's **Tap to share** feature, not by NearLink. Google added it to Pixel 6 and newer phones running Android 17 and up, and it is on by default. When two unlocked Android phones touch, Android swaps contact cards before NearLink's link is delivered. It doesn't affect iPhones.
+
+**The fix:** turn it off on the phone running NearLink. The other person doesn't need to change anything.
+
+1. Open **Settings** on the phone running NearLink.
+2. Tap **Google**, then **Quick Share**.
+3. Turn off **Tap to share**.
+
+Menu names can differ slightly between phone brands. You can also see these instructions at any time in NearLink under **Settings → Tap to share help**. If you want to use Tap to share for something else later, you can switch it back on.
+
 #### Why doesn't the other phone open my link?
 1. **Check NFC Sweet Spots:** NFC antenna placements vary. On iPhones, the NFC sensor is at the very top edge. On Android phones, it is typically in the center or near the camera bump.
 2. **Device Must Be Unlocked:** For security reasons, iOS and Android devices do not read ambient NFC tags while the screen is locked/asleep. Ensure the receiving phone is awake and unlocked.
 3. **Turn Off Contactless Payment Interference:** If the receiving phone prompts for Apple Pay or Google Wallet, hold the phones at a slight angle or ensure you are transmitting a clean NDEF URI scheme.
+4. **Android to Android:** If the phones swap contact cards instead, see the fix above.
 
 #### Does NearLink broadcast when the app is in the background or closed?
 NearLink only broadcasts while the app is active and a card is explicitly selected. When you exit or terminate the app, HCE broadcasting terminates to conserve battery and eliminate unintentional transmissions.
@@ -145,7 +160,7 @@ Yes. NearLink supports standard URI schemes including:
 
 ## 🔒 Privacy & Terms
 
-NearLink does not collect, transmit, track, or share any personal data[cite: 2]. All links, preferences, and backups remain 100% offline and stored strictly on your local device[cite: 2].
+NearLink does not collect, transmit, track, or share any personal data. All links, preferences, and backups remain 100% offline and stored strictly on your local device.
 
 For complete details on data handling and device permissions, please refer to our [Privacy Policy](PRIVACY.md).
 
